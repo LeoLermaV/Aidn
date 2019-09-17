@@ -9,10 +9,7 @@ import HomePage from './pages/homepage/homepage.component'
 import ShopPage from './pages/shop/shop.component.jsx';
 
 
-const HatsPage = () => 
-<div>
-	<h1> HATS </h1>
-</div>
+
 
 function App() {
   return (
