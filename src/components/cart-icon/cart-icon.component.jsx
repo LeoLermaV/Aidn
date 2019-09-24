@@ -30,7 +30,7 @@ const mapStateToProps = ({ cart : {cartItems} }) => ({
 });
 
 
-export default connect (
+export default connect(
 	mapStateToProps,
 	mapDispatchTopProps
 	)(CartIcon);
