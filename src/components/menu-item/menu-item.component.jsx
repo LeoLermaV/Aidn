@@ -4,9 +4,9 @@ import './menu-item.styles.scss';
 
 
 
-const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
-
-
+const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => {
+	console.log(title);
+	return(
  <div className={`${size} menu-item`} onClick={() => history.push(`${match.url}${linkUrl}`)}>
  	<div 
  		className= 'background-image' 
@@ -14,11 +14,12 @@ const MenuItem = ({ title, imageUrl, size, history, linkUrl, match }) => (
  		backgroundImage: `url(${imageUrl})`
  	}} />
     <div className='content'>
-      <div className='title'>{title.toUpperCase}</div>
+      <div className='title'>{title.toUpperCase()}</div>
       <span className='subtitle'>SHOP NOW</span>
     </div>
  </div>
- );
+ );}
+
 
 
 export default withRouter(MenuItem);

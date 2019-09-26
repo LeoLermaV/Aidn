@@ -27,7 +27,7 @@ const INITIAL_STATE = {
   },
   {
     title: 'mens',
-    imageUrl: `https://i.ibb.co/R70vBrQ/men.png`,
+    imageUrl: `https://i.imgur.com/YvmYfpu.png`,
     size: 'large',
     id: 5,
     linkUrl: 'shop/mens',

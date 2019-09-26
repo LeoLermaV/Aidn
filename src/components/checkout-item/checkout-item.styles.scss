@@ -6,10 +6,14 @@
   padding: 15px 0;
   font-size: 20px;
   align-items: center;
+  
 
   .image-container {
     width: 23%;
     padding-right: 15px;
+    @media screen and (max-width:500px) {
+    width: 80px;
+    }
 
     img {
       width: 100%;
@@ -20,6 +24,10 @@
   .quantity,
   .price {
     width: 23%;
+    @media screen and (max-width:500px) {
+    font-size: 10px;}
+    margin: 5px;
+
   }
 
   .quantity {

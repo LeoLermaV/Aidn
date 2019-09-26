@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 350px;
   align-items: center;
-  position:relative;
+  position: relative;
 
   .image {
     width: 100%;
@@ -18,25 +18,42 @@
     width: 80%;
     opacity: 0.7;
     position: absolute;
-    top:255px;
-    display:none
+    top: 255px;
+    display: none;
+    @media screen and (max-width:500px) {
+    font-size: 10px;
+    display: block;
+    opacity: 0.9;
+    min-width: unset;
+    padding: 0 10px;
+  }
   }
 
   &:hover {
     .image {
-      opacity:0.8;
+      opacity: 0.8;
     }
+
     .custom-button {
-      opacity:0.85;
-      display:flex;
+      opacity: 0.85;
+      display: flex;
+
     }
   }
+
+  @media screen and (max-width:500px) {
+   width: 40vw;
+  }
+
   .collection-footer {
-    width: 100%;
+    width: 90%;
     height: 5%;
     display: flex;
     justify-content: space-between;
     font-size: 18px;
+    @media screen and (max-width:500px) {
+     font-size: 9px;
+    }
 
     .name {
       width: 90%;
