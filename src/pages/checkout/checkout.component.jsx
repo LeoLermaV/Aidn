@@ -12,6 +12,7 @@ import {
 import './checkout.styles.scss';
 
 const CheckoutPage = ({ cartItems, total }) => (
+  <div className='background'>
   <div className='checkout-page'>
     <div className='checkout-header'>
       <div className='header-block'>
@@ -35,6 +36,7 @@ const CheckoutPage = ({ cartItems, total }) => (
     ))}
     <div className='total'>TOTAL: ${total}</div>
     <img onClick={()=> window.open("https://www.paypal.co.nz")} className='paypal-button' src="https://www.paypalobjects.com/webstatic/en_US/i/buttons/checkout-logo-large.png" alt="Check out with PayPal" />
+  </div>
   </div>
 );
 
