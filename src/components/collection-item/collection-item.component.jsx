@@ -1,5 +1,6 @@
 import React from 'react';
-import { connect } from 'react-redux'
+import { connect } from 'react-redux';
+import { useAlert } from 'react-alert';
 
 
 
@@ -10,6 +11,7 @@ import './collection-item.styles.scss';
 
 const CollectionItem = ({item, addItem }) => {
 	const { name, price, imageUrl } = item;
+	const alert = useAlert()
 	return(
 <div className="collection-item">
 	<div className="image"
@@ -20,7 +22,7 @@ const CollectionItem = ({item, addItem }) => {
 		<span className="price">${price}</span>
 
 	</div>
-	<CustomButton onClick ={()=> addItem(item)} inverted >
+	<CustomButton onClick ={()=> {alert.show('Added to cart'); addItem(item);}} inverted >
 	Add to cart</CustomButton>
 </div>
 

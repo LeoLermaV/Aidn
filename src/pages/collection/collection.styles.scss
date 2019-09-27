@@ -14,11 +14,12 @@
     grid-gap: 10px;
 
      @media screen and (max-width:500px) {
-    display: grid;
+      margin: 15px 15px;
+         align-items: center;
+     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap:10px;
     }
-
     & .collection-item {
       margin-bottom: 30px;
     }
