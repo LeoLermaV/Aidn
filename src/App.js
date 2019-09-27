@@ -10,7 +10,8 @@ import ShopPage from './pages/shop/shop.component.jsx';
 import Header from './components/header/header.component.jsx';
 import SignInAndSignUpPage from './pages/sign-in-and-sign-up/sign-in-and-sign-up.component';
 import CheckoutPage from './pages/checkout/checkout.component';
-import Footer from './components/footer/footer.component.jsx'
+import Footer from './components/footer/footer.component.jsx';
+import ContactPage from './pages/contact/contact.component';
 
 
 import {auth, createUserProfileDocument} from './firebase/firebase.utils';
@@ -67,6 +68,7 @@ class  App extends React.Component  {
 			            }
 			          />
 			    <Route  path = '/shop' component={ShopPage}/>
+			    <Route  exact path = '/contact' component={ContactPage} />
 			</Switch>
 			<Footer/>
 	    </div>);

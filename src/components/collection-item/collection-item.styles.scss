@@ -32,6 +32,9 @@
   &:hover {
     .image {
       opacity: 0.8;
+      @media screen and (max-width:500px) {
+      opacity: unset;
+      }
     }
 
     .custom-button {

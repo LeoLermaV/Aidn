@@ -36,10 +36,20 @@
     background-color: white;
     color: black;
     border: 1px solid black;
+      @media screen and (max-width:500px) {
+   background-color: black;
+   color:white;
+   border: none; 
+  }
     &:hover {
       background-color: black;
       color:white;
       border:none;
+      @media screen and (max-width:500px) {
+   background-color: black;
+   color:white;
+   border: none; 
+  }
     }
   }  
 }
